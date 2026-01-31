@@ -39,6 +39,21 @@ export {
 } from "./send.messages.js";
 export { sendMessageDiscord, sendPollDiscord, sendStickerDiscord } from "./send.outbound.js";
 export {
+  sendDiscordWebhookText,
+  sendDiscordWebhookMedia,
+  type WebhookIdentity,
+  type WebhookSendOptions,
+  type WebhookSendResult,
+} from "./send.webhook.js";
+export {
+  parseIdentityMd,
+  loadAgentIdentity,
+  resolveAgentIdentityById,
+  resolveWebhookIdentity,
+  toWebhookIdentity,
+  type AgentIdentity,
+} from "./agent-identity.js";
+export {
   fetchChannelPermissionsDiscord,
   fetchReactionsDiscord,
   reactMessageDiscord,

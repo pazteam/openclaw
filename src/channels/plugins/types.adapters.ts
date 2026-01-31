@@ -80,6 +80,8 @@ export type ChannelOutboundContext = {
   threadId?: string | number | null;
   accountId?: string | null;
   deps?: OutboundSendDeps;
+  /** Agent ID for identity-aware outbound (e.g., Discord webhooks). */
+  agentId?: string | null;
 };
 
 export type ChannelOutboundPayloadContext = ChannelOutboundContext & {

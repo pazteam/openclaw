@@ -196,6 +196,7 @@ export const DiscordGuildChannelSchema = z
     users: z.array(z.union([z.string(), z.number()])).optional(),
     systemPrompt: z.string().optional(),
     autoThread: z.boolean().optional(),
+    webhook: z.string().optional(),
   })
   .strict();
 

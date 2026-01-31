@@ -37,6 +37,8 @@ export type DiscordGuildChannelConfig = {
   users?: Array<string | number>;
   /** Optional system prompt snippet for this channel. */
   systemPrompt?: string;
+  /** Webhook URL for agent-identity posts. Messages are posted via webhook with agent name/avatar. */
+  webhook?: string;
 };
 
 export type DiscordReactionNotificationMode = "off" | "own" | "all" | "allowlist";
